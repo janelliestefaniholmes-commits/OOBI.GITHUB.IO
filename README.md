@@ -47,11 +47,14 @@ Support for food companies in regulatory compliance and quality management:
 - Documentation management aligned with DIGESA requirements
 
 ## Applications
+- Research project formulation/development
 - Development of functional beverages
 - Antioxidant-rich food matrices
 - Bioactive ingredient formulation
 - Scientific support for food innovation projects
-
+  
 ## Contact
 OOBI – Food Matrix Innovation Lab  
 Research and Development in Functional Foods
+CEL: +51 949680551
+OOBI1248@gmail.com
