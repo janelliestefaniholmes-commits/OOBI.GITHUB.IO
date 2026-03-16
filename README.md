@@ -52,9 +52,10 @@ Support for food companies in regulatory compliance and quality management:
 - Antioxidant-rich food matrices
 - Bioactive ingredient formulation
 - Scientific support for food innovation projects
+- FOOD SHELF LIFE
   
 ## Contact
-OOBI – Food Matrix Innovation Lab  
+OOBI – BIOINFORMATICS, MANAGEMENT, FORMULATION, FOOD RESEARCH LAB
 Research and Development in Functional Foods
 CEL: +51 949680551
-OOBI1248@gmail.com
+CORREO: OOBI1248@gmail.com
