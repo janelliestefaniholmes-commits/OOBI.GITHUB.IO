@@ -2,130 +2,149 @@
 <html lang="es">
 
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
 
-<title>OOBI | Food Matrix Innovation Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OOBI – Food Matrix Innovation Lab</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
+/* ESTILO GENERAL */
+
 body{
-font-family: "Segoe UI", Arial;
 margin:0;
-background:#f4f6f7;
-color:#2c3e50;
-}
-
-header{
-background:linear-gradient(120deg,#0b3d2e,#145a32);
+font-family:'Inter',sans-serif;
+background:#0a0f1c;
 color:white;
-padding:60px;
-text-align:center;
 }
 
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
+/* NAVBAR */
 
 nav{
-background:#0e6251;
-padding:15px;
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#050814;
+border-bottom:1px solid #1c2340;
+}
+
+.logo{
+font-family:'Orbitron',sans-serif;
+font-size:22px;
+color:#00f7ff;
 }
 
 nav a{
 color:white;
-margin:15px;
 text-decoration:none;
-font-weight:bold;
-font-size:16px;
+margin-left:25px;
+font-size:14px;
+transition:0.3s;
 }
 
 nav a:hover{
-color:#a9dfbf;
+color:#00f7ff;
 }
 
-.hero{
-padding:70px;
-text-align:center;
-background:white;
-}
+/* HERO */
 
 .hero{
 height:520px;
-background:linear-gradient(120deg,#0b3d2e,#145a32,#1f6f5c);
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
+text-align:center;
 position:relative;
 overflow:hidden;
 }
-.hero h2{
-font-size:34px;
+
+.hero h1{
+font-family:'Orbitron',sans-serif;
+font-size:42px;
+color:#00f7ff;
 }
-<section class="hero">
 
-<div class="molecule" style="left:10%;top:30%;"></div>
-<div class="molecule" style="left:25%;top:70%;"></div>
-<div class="molecule" style="left:40%;top:50%;"></div>
-<div class="molecule" style="left:60%;top:20%;"></div>
-<div class="molecule" style="left:75%;top:65%;"></div>
-<div class="molecule" style="left:85%;top:40%;"></div>
+.hero p{
+max-width:700px;
+opacity:0.8;
+}
 
-<h1>OOBI Food Matrix Innovation Lab</h1>
+/* MOLECULAS */
 
-<p>
-Investigación científica en matrices alimentarias
-y compuestos bioactivos
-</p>
+.molecule{
+position:absolute;
+width:6px;
+height:6px;
+background:#00f7ff;
+border-radius:50%;
+opacity:0.5;
+animation:float 12s infinite linear;
+}
 
-</section>
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-80px);}
+100%{transform:translateY(0px);}
+}
+
+/* SECCIONES */
+
 .section{
-padding:60px;
-max-width:1100px;
+padding:80px 60px;
+max-width:1200px;
 margin:auto;
 }
+
+.section h2{
+font-family:'Orbitron';
+color:#00f7ff;
+}
+
+/* TARJETAS */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
+margin-top:40px;
 }
 
 .card{
-background:white;
+background:#11162a;
 padding:30px;
-border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
+border-radius:10px;
+border:1px solid #1f2a50;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
+border:1px solid #00f7ff;
 }
 
 .card h3{
-color:#145a32;
-}
-
-.research{
-background:#ecf0f1;
-}
-
-.species{
-line-height:1.8;
+color:#00f7ff;
 font-size:18px;
 }
 
+.card p{
+font-size:14px;
+opacity:0.8;
+}
+
+/* FOOTER */
+
 footer{
-background:#0b3d2e;
-color:white;
 text-align:center;
-padding:35px;
-margin-top:50px;
+padding:40px;
+background:#050814;
+border-top:1px solid #1c2340;
+margin-top:80px;
 }
 
 </style>
@@ -134,151 +153,98 @@ margin-top:50px;
 
 <body>
 
-<header>
-
-<h1>OOBI – Food Matrix Innovation Lab</h1>
-
-<p>
-Scientific research and innovation in functional food matrices
-</p>
-
-</header>
-
-
 <nav>
 
-<a href="index.html">Inicio</a>
-<a href="bioinformatica.html">Bioinformática</a>
-<a href="vida-util.html">Vida útil</a>
-<a href="inocuidad.html">Inocuidad</a>
-<a href="registro.html">Registro sanitario</a>
-<a href="investigacion.html">Investigación</a>
-<a href="capacitaciones.html">Capacitaciones</a>
-<a href="contacto.html">Contacto</a>
+<div class="logo">OOBI LAB</div>
+
+<div>
+
+<a href="Bioinformatica-para-el-diseno-de-productos-alimentarios.html">Bioinformática</a>
+
+<a href="Vida-util-de-los-alimentos.html">Vida útil</a>
+
+<a href="Gestion-de-inocuidad-de-los-alimentos.html">Inocuidad</a>
+
+<a href="Registro-Sanitario.html">Registro sanitario</a>
+
+<a href="Contacto.html">Contacto</a>
+
+</div>
 
 </nav>
 
-
 <section class="hero">
 
-<h2>Diseño científico de alimentos funcionales</h2>
+<div class="molecule" style="left:10%;top:20%"></div>
+<div class="molecule" style="left:30%;top:70%"></div>
+<div class="molecule" style="left:50%;top:40%"></div>
+<div class="molecule" style="left:70%;top:60%"></div>
+<div class="molecule" style="left:85%;top:30%"></div>
+
+<h1>OOBI Food Matrix Innovation Lab</h1>
 
 <p>
-OOBI integra bioinformática, química de alimentos,
-biología molecular y análisis experimental
-para desarrollar matrices alimentarias
-con compuestos bioactivos optimizados.
+Investigación científica aplicada a matrices alimentarias, bioinformática,
+desarrollo de alimentos funcionales y validación experimental.
 </p>
 
 </section>
 
-
 <section class="section">
 
-<h2>Áreas científicas de trabajo</h2>
+<h2>Nuestras áreas científicas</h2>
 
 <div class="cards">
 
 <div class="card">
-
 <h3>Bioinformática alimentaria</h3>
-
 <p>
-Simulación molecular de compuestos bioactivos,
-modelado de interacciones proteína-polifenol
-y diseño computacional de matrices funcionales.
+Simulación molecular, interacción proteína-compuesto bioactivo y diseño de alimentos funcionales mediante modelado computacional.
 </p>
-
 </div>
 
 <div class="card">
-
-<h3>Estabilidad y vida útil</h3>
-
+<h3>Vida útil de alimentos</h3>
 <p>
-Evaluación de degradación oxidativa,
-cinética de estabilidad y conservación
-de compuestos bioactivos en alimentos.
+Modelamiento de estabilidad química, microbiológica y sensorial en matrices alimentarias complejas.
 </p>
-
 </div>
 
 <div class="card">
-
-<h3>Sistemas de inocuidad</h3>
-
+<h3>Inocuidad alimentaria</h3>
 <p>
-Implementación de HACCP,
-programas prerrequisito y
-gestión regulatoria para la industria alimentaria.
+Diseño e implementación de sistemas HACCP, PGH y cumplimiento regulatorio.
 </p>
-
 </div>
 
 <div class="card">
-
-<h3>Investigación en matrices vegetales</h3>
-
+<h3>Investigación en matrices</h3>
 <p>
-Exploración de especies vegetales peruanas
-como fuentes de metabolitos bioactivos
-para el desarrollo de alimentos funcionales.
+Caracterización funcional de matrices vegetales, antioxidantes y compuestos bioactivos.
 </p>
+</div>
 
+<div class="card">
+<h3>Capacitaciones</h3>
+<p>
+Formación científica para industria alimentaria, control de calidad y desarrollo de productos.
+</p>
+</div>
+
+<div class="card">
+<h3>Formulación de proyectos</h3>
+<p>
+Diseño de proyectos de I+D para innovación en alimentos y biotecnología.
+</p>
 </div>
 
 </div>
 
 </section>
-
-
-<section class="section research">
-
-<h2>Matrices vegetales en investigación</h2>
-
-<div class="species">
-
-• Cacao — <i>Theobroma cacao</i>  
-<br>
-• Café — <i>Coffea arabica</i>  
-<br>
-• Sachajergón — <i>Dracontium loretense</i>  
-<br>
-• Manayupa — <i>Desmodium molliculum</i>  
-<br>
-• Cañihua — <i>Chenopodium pallidicaule</i>  
-<br>
-• Pitahaya — <i>Hylocereus undatus</i>  
-<br>
-• Uva negra — <i>Vitis vinifera</i>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Innovación basada en ciencia</h2>
-
-<p>
-
-OOBI desarrolla soluciones científicas para la industria alimentaria
-mediante integración de bioinformática, experimentación
-y formulación de matrices alimentarias innovadoras.
-
-</p>
-
-</section>
-
 
 <footer>
 
-<p>OOBI Food Matrix Innovation Lab</p>
-
-<p>
-Investigación científica · Bioinformática · Innovación alimentaria
-</p>
+OOBI Food Matrix Innovation Lab © 2026
 
 </footer>
 
