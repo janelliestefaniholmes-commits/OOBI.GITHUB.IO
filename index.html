@@ -10,21 +10,26 @@
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family: "Segoe UI", Arial;
 margin:0;
 background:#f4f6f7;
 color:#2c3e50;
 }
 
 header{
-background:#0b3d2e;
+background:linear-gradient(120deg,#0b3d2e,#145a32);
 color:white;
-padding:40px;
+padding:60px;
 text-align:center;
 }
 
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
 nav{
-background:#145a32;
+background:#0e6251;
 padding:15px;
 text-align:center;
 }
@@ -42,44 +47,58 @@ color:#a9dfbf;
 }
 
 .hero{
-padding:60px;
+padding:70px;
 text-align:center;
 background:white;
 }
 
-.hero h1{
-font-size:40px;
+.hero h2{
+font-size:34px;
 }
 
 .section{
 padding:60px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
 color:#145a32;
 }
 
+.research{
+background:#ecf0f1;
+}
+
+.species{
+line-height:1.8;
+font-size:18px;
+}
+
 footer{
 background:#0b3d2e;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
+padding:35px;
+margin-top:50px;
 }
 
 </style>
@@ -92,7 +111,9 @@ margin-top:40px;
 
 <h1>OOBI – Food Matrix Innovation Lab</h1>
 
-<p>Innovación científica en matrices alimentarias y alimentos funcionales</p>
+<p>
+Scientific research and innovation in functional food matrices
+</p>
 
 </header>
 
@@ -113,12 +134,13 @@ margin-top:40px;
 
 <section class="hero">
 
-<h1>Investigación y desarrollo en alimentos funcionales</h1>
+<h2>Diseño científico de alimentos funcionales</h2>
 
 <p>
-OOBI integra bioinformática, investigación experimental y
-diseño de matrices alimentarias para desarrollar productos
-funcionales con respaldo científico.
+OOBI integra bioinformática, química de alimentos,
+biología molecular y análisis experimental
+para desarrollar matrices alimentarias
+con compuestos bioactivos optimizados.
 </p>
 
 </section>
@@ -126,7 +148,7 @@ funcionales con respaldo científico.
 
 <section class="section">
 
-<h2>Áreas de innovación</h2>
+<h2>Áreas científicas de trabajo</h2>
 
 <div class="cards">
 
@@ -135,33 +157,33 @@ funcionales con respaldo científico.
 <h3>Bioinformática alimentaria</h3>
 
 <p>
-Modelado computacional de compuestos bioactivos,
-interacciones proteína-polifenol y diseño racional
-de matrices funcionales.
+Simulación molecular de compuestos bioactivos,
+modelado de interacciones proteína-polifenol
+y diseño computacional de matrices funcionales.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Vida útil de alimentos</h3>
+<h3>Estabilidad y vida útil</h3>
 
 <p>
-Evaluación de estabilidad química, oxidación
-y degradación de compuestos bioactivos
-en matrices alimentarias.
+Evaluación de degradación oxidativa,
+cinética de estabilidad y conservación
+de compuestos bioactivos en alimentos.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Inocuidad alimentaria</h3>
+<h3>Sistemas de inocuidad</h3>
 
 <p>
-Implementación de sistemas HACCP,
+Implementación de HACCP,
 programas prerrequisito y
-cumplimiento regulatorio.
+gestión regulatoria para la industria alimentaria.
 </p>
 
 </div>
@@ -172,7 +194,8 @@ cumplimiento regulatorio.
 
 <p>
 Exploración de especies vegetales peruanas
-como fuentes de compuestos bioactivos.
+como fuentes de metabolitos bioactivos
+para el desarrollo de alimentos funcionales.
 </p>
 
 </div>
@@ -182,27 +205,42 @@ como fuentes de compuestos bioactivos.
 </section>
 
 
-<section class="section">
+<section class="section research">
 
 <h2>Matrices vegetales en investigación</h2>
 
-<ul>
+<div class="species">
 
-<li>Cacao — <i>Theobroma cacao</i></li>
+• Cacao — <i>Theobroma cacao</i>  
+<br>
+• Café — <i>Coffea arabica</i>  
+<br>
+• Sachajergón — <i>Dracontium loretense</i>  
+<br>
+• Manayupa — <i>Desmodium molliculum</i>  
+<br>
+• Cañihua — <i>Chenopodium pallidicaule</i>  
+<br>
+• Pitahaya — <i>Hylocereus undatus</i>  
+<br>
+• Uva negra — <i>Vitis vinifera</i>
 
-<li>Café — <i>Coffea arabica</i></li>
+</div>
 
-<li>Sachajergón — <i>Dracontium loretense</i></li>
+</section>
 
-<li>Manayupa — <i>Desmodium molliculum</i></li>
 
-<li>Cañihua — <i>Chenopodium pallidicaule</i></li>
+<section class="section">
 
-<li>Pitahaya — <i>Hylocereus undatus</i></li>
+<h2>Innovación basada en ciencia</h2>
 
-<li>Uva negra — <i>Vitis vinifera</i></li>
+<p>
 
-</ul>
+OOBI desarrolla soluciones científicas para la industria alimentaria
+mediante integración de bioinformática, experimentación
+y formulación de matrices alimentarias innovadoras.
+
+</p>
 
 </section>
 
@@ -211,7 +249,9 @@ como fuentes de compuestos bioactivos.
 
 <p>OOBI Food Matrix Innovation Lab</p>
 
-<p>Investigación · Bioinformática · Innovación alimentaria</p>
+<p>
+Investigación científica · Bioinformática · Innovación alimentaria
+</p>
 
 </footer>
 
