@@ -12,6 +12,8 @@
 
 <style>
 
+/* ===== ESTILO GENERAL ===== */
+
 body{
 margin:0;
 font-family:'Inter',sans-serif;
@@ -19,28 +21,165 @@ background:#0b0f1a;
 color:white;
 }
 
- <style>
- .contacto{
-padding:80px 60px;
-background:#0b0f1a;
+/* ===== NAVBAR ===== */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#050814;
+border-bottom:1px solid #1f2a50;
+}
+
+.logo{
+font-family:'Orbitron';
+color:#00e5ff;
+font-size:22px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+background:radial-gradient(circle at center,#13203a,#050814);
+overflow:hidden;
+}
+
+.hero h1{
+font-family:'Orbitron';
+font-size:54px;
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:650px;
+opacity:0.85;
+font-size:18px;
+}
+
+.button{
+margin-top:30px;
+padding:14px 32px;
+background:#00e5ff;
+border-radius:6px;
+color:black;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.button:hover{
+background:#00c6e0;
+}
+
+/* ===== MOLECULAS ANIMADAS ===== */
+
+.molecule{
+position:absolute;
+width:6px;
+height:6px;
+background:#00e5ff;
+border-radius:50%;
+opacity:0.5;
+animation:float 14s infinite linear;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-120px)}
+100%{transform:translateY(0)}
+}
+
+/* ===== SECCIONES ===== */
+
+.section{
+padding:90px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+font-family:'Orbitron';
+color:#00e5ff;
+font-size:32px;
+text-align:center;
+}
+
+/* ===== TARJETAS ===== */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:linear-gradient(145deg,#0e152a,#11162a);
+padding:30px;
+border-radius:14px;
+border:1px solid #1f2a50;
+transition:0.4s;
+box-shadow:0 0 20px rgba(0,229,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+border:1px solid #00e5ff;
+box-shadow:0 0 40px rgba(0,229,255,0.2);
+}
+
+.card h3{
+color:#00e5ff;
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto{
+padding:90px 60px;
+background:#070c18;
 text-align:center;
 }
 
 .contacto h2{
-color:#00e5ff;
 font-family:'Orbitron';
+color:#00e5ff;
 }
 
 .contact-container{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:40px;
+gap:50px;
 margin-top:40px;
 align-items:center;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .contact-info{
 text-align:left;
+font-size:16px;
 }
 
 .contact-form{
@@ -67,137 +206,27 @@ font-weight:bold;
 cursor:pointer;
 }
 
-</style>
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#050814;
-border-bottom:1px solid #1f2a50;
+.contact-form button:hover{
+background:#00c6e0;
 }
 
-.logo{
-font-family:'Orbitron',sans-serif;
-color:#00e5ff;
-font-size:22px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-margin-left:25px;
-font-size:14px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#00e5ff;
-}
-
-/* HERO */
-
-.hero{
-height:540px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-position:relative;
-overflow:hidden;
-background:radial-gradient(circle at center,#13203a,#050814);
-}
-
-.hero h1{
-font-family:'Orbitron',sans-serif;
-font-size:46px;
-color:#00e5ff;
-}
-
-.hero p{
-max-width:700px;
-opacity:0.8;
-}
-
-/* BOTON */
-
-.button{
-margin-top:25px;
-padding:12px 28px;
-background:#00e5ff;
-border-radius:6px;
-color:black;
-font-weight:600;
-text-decoration:none;
-}
-
-/* MOLECULAS */
-
-.molecule{
-position:absolute;
-width:6px;
-height:6px;
-background:#00e5ff;
-border-radius:50%;
-opacity:0.5;
-animation:float 14s infinite linear;
-}
-
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-100px)}
-100%{transform:translateY(0)}
-}
-
-/* SECCIONES */
-
-.section{
-padding:90px 60px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-font-family:'Orbitron';
-color:#00e5ff;
-}
-
-/* TARJETAS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:40px;
-}
-
-.card{
-background:#11162a;
-padding:30px;
-border-radius:12px;
-border:1px solid #1f2a50;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-border:1px solid #00e5ff;
-}
-
-.card h3{
-color:#00e5ff;
-}
-
-/* FOOTER */
+/* ===== FOOTER ===== */
 
 footer{
 text-align:center;
 padding:40px;
 background:#050814;
 border-top:1px solid #1f2a50;
+font-size:14px;
+}
+
+footer a{
+color:#00e5ff;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
 }
 
 </style>
@@ -211,17 +240,11 @@ border-top:1px solid #1f2a50;
 <div class="logo">OOBI LAB</div>
 
 <div>
-
 <a href="Bioinformatica-para-el-diseno-de-productos-alimentarios.html">Bioinformática</a>
-
 <a href="Vida-util-de-los-alimentos.html">Vida útil</a>
-
 <a href="Gestion-de-inocuidad-de-los-alimentos.html">Inocuidad</a>
-
 <a href="Registro-Sanitario.html">Registro sanitario</a>
-
 <a href="Contacto.html">Contacto</a>
-
 </div>
 
 </nav>
@@ -242,7 +265,7 @@ Investigación científica aplicada a matrices alimentarias, bioinformática,
 desarrollo de alimentos funcionales y validación experimental.
 </p>
 
-<a class="button" href="Contacto.html">Contactar laboratorio</a>
+<a class="button" href="#contacto">Contactar laboratorio</a>
 
 </section>
 
@@ -285,9 +308,10 @@ desarrollo de alimentos funcionales y validación experimental.
 </div>
 
 </section>
-<section class="contacto">
 
-<h2>Contacto Científico</h2>
+<section class="contacto" id="contacto">
+
+<h2>Contacto científico</h2>
 
 <p>¿Deseas desarrollar un producto funcional o proyecto de investigación?</p>
 
@@ -300,7 +324,10 @@ desarrollo de alimentos funcionales y validación experimental.
 <p>📧 oobi1248@gmail.com</p>
 <p>📱 +51 949 680 551</p>
 
-<p>Laboratorio de innovación en matrices alimentarias y bioinformática.</p>
+<p>
+Laboratorio de innovación en matrices alimentarias,
+bioinformática y desarrollo de alimentos funcionales.
+</p>
 
 </div>
 
@@ -308,7 +335,7 @@ desarrollo de alimentos funcionales y validación experimental.
 
 <input type="text" placeholder="Nombre" required>
 <input type="email" placeholder="Correo electrónico" required>
-<input type="text" placeholder="Empresa / Proyecto">
+<input type="text" placeholder="Empresa o proyecto">
 
 <textarea placeholder="Describe tu proyecto..." required></textarea>
 
@@ -319,23 +346,25 @@ desarrollo de alimentos funcionales y validación experimental.
 </div>
 
 </section>
+
 <footer>
 
 <p><strong>OOBI Food Matrix Innovation Lab © 2026</strong></p>
 
 <p>
-📧 Email: 
-<a href="mailto:oobi1248@gmail.com">oobi1248@gmail.com</a>
+📧 <a href="mailto:oobi1248@gmail.com">oobi1248@gmail.com</a>
 </p>
 
- <p>
- 📧 JANELLI E. MORALES ARTEAGA, Ingeniera de alimentos, CIP:324694
+<p>
+JANELLI E. MORALES ARTEAGA – Ingeniera de Alimentos – CIP 324694
 </p>
-📱 Celular: 
-<a href="tel:+51949680551">+51 949 680 551</a>
+
+<p>
+📱 <a href="tel:+51949680551">+51 949 680 551</a>
 </p>
 
 </footer>
+
 </body>
 
 </html>
