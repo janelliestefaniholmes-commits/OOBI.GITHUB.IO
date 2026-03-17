@@ -12,12 +12,10 @@
 
 <style>
 
-/* ESTILO GENERAL */
-
 body{
 margin:0;
 font-family:'Inter',sans-serif;
-background:#0a0f1c;
+background:#0b0f1a;
 color:white;
 }
 
@@ -29,31 +27,31 @@ justify-content:space-between;
 align-items:center;
 padding:20px 60px;
 background:#050814;
-border-bottom:1px solid #1c2340;
+border-bottom:1px solid #1f2a50;
 }
 
 .logo{
 font-family:'Orbitron',sans-serif;
+color:#00e5ff;
 font-size:22px;
-color:#00f7ff;
 }
 
 nav a{
-color:white;
 text-decoration:none;
+color:white;
 margin-left:25px;
 font-size:14px;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#00f7ff;
+color:#00e5ff;
 }
 
 /* HERO */
 
 .hero{
-height:520px;
+height:540px;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -61,17 +59,30 @@ align-items:center;
 text-align:center;
 position:relative;
 overflow:hidden;
+background:radial-gradient(circle at center,#13203a,#050814);
 }
 
 .hero h1{
 font-family:'Orbitron',sans-serif;
-font-size:42px;
-color:#00f7ff;
+font-size:46px;
+color:#00e5ff;
 }
 
 .hero p{
 max-width:700px;
 opacity:0.8;
+}
+
+/* BOTON */
+
+.button{
+margin-top:25px;
+padding:12px 28px;
+background:#00e5ff;
+border-radius:6px;
+color:black;
+font-weight:600;
+text-decoration:none;
 }
 
 /* MOLECULAS */
@@ -80,29 +91,29 @@ opacity:0.8;
 position:absolute;
 width:6px;
 height:6px;
-background:#00f7ff;
+background:#00e5ff;
 border-radius:50%;
 opacity:0.5;
-animation:float 12s infinite linear;
+animation:float 14s infinite linear;
 }
 
 @keyframes float{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-80px);}
-100%{transform:translateY(0px);}
+0%{transform:translateY(0)}
+50%{transform:translateY(-100px)}
+100%{transform:translateY(0)}
 }
 
 /* SECCIONES */
 
 .section{
-padding:80px 60px;
+padding:90px 60px;
 max-width:1200px;
 margin:auto;
 }
 
 .section h2{
 font-family:'Orbitron';
-color:#00f7ff;
+color:#00e5ff;
 }
 
 /* TARJETAS */
@@ -117,24 +128,18 @@ margin-top:40px;
 .card{
 background:#11162a;
 padding:30px;
-border-radius:10px;
+border-radius:12px;
 border:1px solid #1f2a50;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-border:1px solid #00f7ff;
+transform:translateY(-10px);
+border:1px solid #00e5ff;
 }
 
 .card h3{
-color:#00f7ff;
-font-size:18px;
-}
-
-.card p{
-font-size:14px;
-opacity:0.8;
+color:#00e5ff;
 }
 
 /* FOOTER */
@@ -143,8 +148,7 @@ footer{
 text-align:center;
 padding:40px;
 background:#050814;
-border-top:1px solid #1c2340;
-margin-top:80px;
+border-top:1px solid #1f2a50;
 }
 
 </style>
@@ -180,62 +184,53 @@ margin-top:80px;
 <div class="molecule" style="left:50%;top:40%"></div>
 <div class="molecule" style="left:70%;top:60%"></div>
 <div class="molecule" style="left:85%;top:30%"></div>
+<div class="molecule" style="left:20%;top:50%"></div>
 
-<h1>OOBI Food Matrix Innovation Lab</h1>
+<h1>Food Matrix Innovation Lab</h1>
 
 <p>
 Investigación científica aplicada a matrices alimentarias, bioinformática,
 desarrollo de alimentos funcionales y validación experimental.
 </p>
 
+<a class="button" href="Contacto.html">Contactar laboratorio</a>
+
 </section>
 
 <section class="section">
 
-<h2>Nuestras áreas científicas</h2>
+<h2>Áreas de investigación</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Bioinformática alimentaria</h3>
-<p>
-Simulación molecular, interacción proteína-compuesto bioactivo y diseño de alimentos funcionales mediante modelado computacional.
-</p>
+<p>Modelado molecular de proteínas, compuestos bioactivos y simulación computacional.</p>
 </div>
 
 <div class="card">
 <h3>Vida útil de alimentos</h3>
-<p>
-Modelamiento de estabilidad química, microbiológica y sensorial en matrices alimentarias complejas.
-</p>
+<p>Estabilidad química, microbiológica y modelamiento predictivo.</p>
 </div>
 
 <div class="card">
 <h3>Inocuidad alimentaria</h3>
-<p>
-Diseño e implementación de sistemas HACCP, PGH y cumplimiento regulatorio.
-</p>
+<p>Implementación de HACCP, PGH y control sanitario.</p>
 </div>
 
 <div class="card">
-<h3>Investigación en matrices</h3>
-<p>
-Caracterización funcional de matrices vegetales, antioxidantes y compuestos bioactivos.
-</p>
+<h3>Matrices alimentarias</h3>
+<p>Caracterización funcional de compuestos antioxidantes.</p>
 </div>
 
 <div class="card">
 <h3>Capacitaciones</h3>
-<p>
-Formación científica para industria alimentaria, control de calidad y desarrollo de productos.
-</p>
+<p>Formación técnica para industria alimentaria.</p>
 </div>
 
 <div class="card">
 <h3>Formulación de proyectos</h3>
-<p>
-Diseño de proyectos de I+D para innovación en alimentos y biotecnología.
-</p>
+<p>Desarrollo de proyectos científicos para innovación.</p>
 </div>
 
 </div>
