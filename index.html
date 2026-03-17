@@ -19,6 +19,55 @@ background:#0b0f1a;
 color:white;
 }
 
+ <style>
+ .contacto{
+padding:80px 60px;
+background:#0b0f1a;
+text-align:center;
+}
+
+.contacto h2{
+color:#00e5ff;
+font-family:'Orbitron';
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+align-items:center;
+}
+
+.contact-info{
+text-align:left;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:none;
+border-radius:6px;
+background:#11162a;
+color:white;
+}
+
+.contact-form button{
+padding:12px;
+background:#00e5ff;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+</style>
 /* NAVBAR */
 
 nav{
@@ -236,7 +285,40 @@ desarrollo de alimentos funcionales y validación experimental.
 </div>
 
 </section>
+<section class="contacto">
 
+<h2>Contacto Científico</h2>
+
+<p>¿Deseas desarrollar un producto funcional o proyecto de investigación?</p>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Información de contacto</h3>
+
+<p>📧 oobi1248@gmail.com</p>
+<p>📱 +51 949 680 551</p>
+
+<p>Laboratorio de innovación en matrices alimentarias y bioinformática.</p>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Correo electrónico" required>
+<input type="text" placeholder="Empresa / Proyecto">
+
+<textarea placeholder="Describe tu proyecto..." required></textarea>
+
+<button type="submit">Enviar consulta</button>
+
+</form>
+
+</div>
+
+</section>
 <footer>
 
 <p><strong>OOBI Food Matrix Innovation Lab © 2026</strong></p>
